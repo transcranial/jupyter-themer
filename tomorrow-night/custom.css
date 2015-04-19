@@ -1,21 +1,33 @@
 
-div#notebook {border-top: none;}
+div#notebook {
+    border-top: none;
+}
 
-div#site {background-color: #1d1f21;}
+div#site {
+    background-color: #1d1f21;
+}
 
 div#notebook-container {
     background-color: #1d1f21;
     width: 100%;
 }
 
-div.input_prompt {color: #a3685a;}
-div.output_prompt {color: #b294bb;}
+div.input_prompt {
+    color: #a3685a;
+}
+div.output_prompt {
+    color: #b294bb;
+}
 div.input_area {
   border-radius: 0px;
   border: 1px solid #373b41;
 }
-div.output_area pre {font-weight: normal; color: #c5c8c6;}
-div.output_subarea {font-weight: normal; color: #c5c8c6;}
+div.output_area pre {
+    font-weight: normal; color: #c5c8c6;
+}
+div.output_subarea {
+    font-weight: normal; color: #c5c8c6;
+}
 
 .rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
   border: 1px  #c5c8c6 solid;
@@ -25,7 +37,9 @@ div.output_html {
     font-family: sans-serif; 
     font-size: 100%;
 }
-table.dataframe tr {border: 1px #c5c8c6;}
+table.dataframe tr {
+    border: 1px #c5c8c6;
+}
 
 div.cell {
     padding: 6em 4em;
@@ -44,8 +58,16 @@ div.cell.selected {
     border-radius: 0px;
     border-color: #8abeb7;
 }
-div.cell.edit_mode {border-radius: 0px; border: thin solid #b294bb;}
-div.text_cell_render, div.output_html {color: #c5c8c6;}
+.edit_mode div.cell.selected {
+    border-color: #c5c8c6;
+}
+div.cell.edit_mode {
+    border-radius: 0px; 
+    border: thin solid #b294bb;
+}
+div.text_cell_render, div.output_html {
+    color: #c5c8c6;
+}
 
 span.ansiblack {color: #282a2e;}
 span.ansiblue {color: #8abeb7;}
