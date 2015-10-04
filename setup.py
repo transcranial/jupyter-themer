@@ -16,7 +16,7 @@ setup(
     package_data={'': ['LICENSE']},
     entry_points = {
         'console_scripts' : [
-            'jupyter-themer = jupythemer.run'
+            'jupyter-themer = jupythemer:run'
         ]
     },
-    install_requires=['lesscpy'])
+    install_requires=[])
