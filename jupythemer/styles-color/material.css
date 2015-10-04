@@ -1,0 +1,57 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/*
+
+    Name:       material
+    Author:     Michael Kaminsky (http://github.com/mkaminsky11)
+
+    Original material color scheme by Mattia Astorino (https://github.com/equinusocio/material-theme)
+
+*/
+
+.CodeMirror {
+  background-color: #263238;
+  color: rgba(233, 237, 237, 1);
+}
+.CodeMirror .CodeMirror-gutters {
+  background: #263238;
+  color: rgb(83,127,126);
+  border: none;
+}
+.CodeMirror .CodeMirror-guttermarker, .CodeMirror .CodeMirror-guttermarker-subtle, .CodeMirror .CodeMirror-linenumber { color: rgb(83,127,126); }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+.CodeMirror div.CodeMirror-selected { background: rgba(255, 255, 255, 0.15); }
+.CodeMirror-focused div.CodeMirror-selected { background: rgba(255, 255, 255, 0.10); }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(255, 255, 255, 0.10); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, 0.10); }
+
+.CodeMirror .CodeMirror-activeline-background { background: rgba(0, 0, 0, 0); }
+.CodeMirror .cm-keyword { color: rgba(199, 146, 234, 1); }
+.CodeMirror .cm-operator { color: rgba(233, 237, 237, 1); }
+.CodeMirror .cm-variable-2 { color: #80CBC4; }
+.CodeMirror .cm-variable-3 { color: #82B1FF; }
+.CodeMirror .cm-builtin { color: #DECB6B; }
+.CodeMirror .cm-atom { color: #F77669; }
+.CodeMirror .cm-number { color: #F77669; }
+.CodeMirror .cm-def { color: rgba(233, 237, 237, 1); }
+.CodeMirror .cm-error {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: #EC5F67;
+}
+.CodeMirror .cm-string { color: #C3E88D; }
+.CodeMirror .cm-string-2 { color: #80CBC4; }
+.CodeMirror .cm-comment { color: #546E7A; }
+.CodeMirror .cm-variable { color: #82B1FF; }
+.CodeMirror .cm-tag { color: #80CBC4; }
+.CodeMirror .cm-meta { color: #80CBC4; }
+.CodeMirror .cm-attribute { color: #FFCB6B; }
+.CodeMirror .cm-property { color: #80CBAE; }
+.CodeMirror .cm-qualifier { color: #DECB6B; }
+.CodeMirror .cm-variable-3 { color: #DECB6B; }
+.CodeMirror .cm-tag { color: rgba(255, 83, 112, 1); }
+.CodeMirror .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}

@@ -1,0 +1,41 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/****************************************************************/
+/*   Based on mbonaci's Brackets mbo theme                      */
+/*   https://github.com/mbonaci/global/blob/master/Mbo.tmTheme  */
+/*   Create your own: http://tmtheme-editor.herokuapp.com       */
+/****************************************************************/
+
+.CodeMirror { background: #2c2c2c; color: #ffffec; }
+.CodeMirror div.CodeMirror-selected { background: #716C62; }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(113, 108, 98, .99); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(113, 108, 98, .99); }
+.CodeMirror .CodeMirror-gutters { background: #4e4e4e; border-right: 0px; }
+.CodeMirror .CodeMirror-guttermarker { color: white; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: grey; }
+.CodeMirror .CodeMirror-linenumber { color: #dadada; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #ffffec; }
+
+.CodeMirror span.cm-comment { color: #95958a; }
+.CodeMirror span.cm-atom { color: #00a8c6; }
+.CodeMirror span.cm-number { color: #00a8c6; }
+
+.CodeMirror span.cm-property, .CodeMirror span.cm-attribute { color: #9ddfe9; }
+.CodeMirror span.cm-keyword { color: #ffb928; }
+.CodeMirror span.cm-string { color: #ffcf6c; }
+.CodeMirror span.cm-string.cm-property { color: #ffffec; }
+
+.CodeMirror span.cm-variable { color: #ffffec; }
+.CodeMirror span.cm-variable-2 { color: #00a8c6; }
+.CodeMirror span.cm-def { color: #ffffec; }
+.CodeMirror span.cm-bracket { color: #fffffc; font-weight: bold; }
+.CodeMirror span.cm-tag { color: #9ddfe9; }
+.CodeMirror span.cm-link { color: #f54b07; }
+.CodeMirror span.cm-error { border-bottom: #636363; color: #ffffec; }
+.CodeMirror span.cm-qualifier { color: #ffffec; }
+
+.CodeMirror .CodeMirror-activeline-background { background: #494b41; }
+.CodeMirror .CodeMirror-matchingbracket { color: #222 !important; }
+.CodeMirror .CodeMirror-matchingtag { background: rgba(255, 255, 255, .37); }

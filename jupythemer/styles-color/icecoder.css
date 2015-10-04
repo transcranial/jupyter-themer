@@ -1,0 +1,47 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/*
+ICEcoder default theme by Matt Pass, used in code editor available at https://icecoder.net
+*/
+
+.CodeMirror { color: #666; background: #141612; }
+
+.CodeMirror span.cm-keyword { color: #eee; font-weight:bold; }  /* off-white 1 */
+.CodeMirror span.cm-atom { color: #e1c76e; }                    /* yellow */
+.CodeMirror span.cm-number { color: #6cb5d9; }                  /* blue */
+.CodeMirror span.cm-def { color: #b9ca4a; }                     /* green */
+
+.CodeMirror span.cm-variable { color: #6cb5d9; }                /* blue */
+.CodeMirror span.cm-variable-2 { color: #cc1e5c; }              /* pink */
+.CodeMirror span.cm-variable-3 { color: #f9602c; }              /* orange */
+
+.CodeMirror span.cm-property { color: #eee; }                   /* off-white 1 */
+.CodeMirror span.cm-operator { color: #9179bb; }                /* purple */
+.CodeMirror span.cm-comment { color: #97a3aa; }                 /* grey-blue */
+
+.CodeMirror span.cm-string { color: #b9ca4a; }                  /* green */
+.CodeMirror span.cm-string-2 { color: #6cb5d9; }                /* blue */
+
+.CodeMirror span.cm-meta { color: #555; }                       /* grey */
+
+.CodeMirror span.cm-qualifier { color: #555; }                  /* grey */
+.CodeMirror span.cm-builtin { color: #214e7b; }                 /* bright blue */
+.CodeMirror span.cm-bracket { color: #cc7; }                    /* grey-yellow */
+
+.CodeMirror span.cm-tag { color: #e8e8e8; }                     /* off-white 2 */
+.CodeMirror span.cm-attribute { color: #099; }                  /* teal */
+
+.CodeMirror span.cm-header { color: #6a0d6a; }                  /* purple-pink */
+.CodeMirror span.cm-quote { color: #186718; }                   /* dark green */
+.CodeMirror span.cm-hr { color: #888; }                         /* mid-grey */
+.CodeMirror span.cm-link { color: #e1c76e; }                    /* yellow */
+.CodeMirror span.cm-error { color: #d00; }                      /* red */
+
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid white; }
+.CodeMirror div.CodeMirror-selected { color: #fff; background: #037; }
+.CodeMirror .CodeMirror-gutters { background: #141612; min-width: 41px; border-right: 0; }
+.CodeMirror .CodeMirror-linenumber { color: #555; cursor: default; }
+.CodeMirror .CodeMirror-matchingbracket { border: 1px solid grey; color: black !important; }
+.CodeMirror .CodeMirror-activeline-background { background: #000; }

@@ -1,0 +1,49 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/* Based on the theme at http://bonsaiden.github.com/JavaScript-Garden */
+
+/*<!--match-->*/
+.CodeMirror span.CodeMirror-matchhighlight { background: #494949; }
+.CodeMirror-focused span.CodeMirror-matchhighlight { background: #314D67 !important; }
+
+/*<!--activeline-->*/
+.CodeMirror .CodeMirror-activeline-background { background: #253540; }
+
+.CodeMirror {
+    background: #0F192A;
+    color: #D1EDFF;
+}
+
+.CodeMirror { border-top: 1px solid black; border-bottom: 1px solid black; }
+
+.CodeMirror div.CodeMirror-selected { background: #314D67; }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(49, 77, 103, .99); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(49, 77, 103, .99); }
+.CodeMirror .CodeMirror-gutters { background: #0F192A; border-right: 1px solid; }
+.CodeMirror .CodeMirror-guttermarker { color: white; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #d0d0d0; }
+.CodeMirror .CodeMirror-linenumber { color: #D0D0D0; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #F8F8F0; }
+
+.CodeMirror span.cm-comment { color: #428BDD; }
+.CodeMirror span.cm-atom { color: #AE81FF; }
+.CodeMirror span.cm-number { color: #D1EDFF; }
+
+.CodeMirror span.cm-property, .CodeMirror span.cm-attribute { color: #A6E22E; }
+.CodeMirror span.cm-keyword { color: #E83737; }
+.CodeMirror span.cm-string { color: #1DC116; }
+
+.CodeMirror span.cm-variable { color: #FFAA3E; }
+.CodeMirror span.cm-variable-2 { color: #FFAA3E; }
+.CodeMirror span.cm-def { color: #4DD; }
+.CodeMirror span.cm-bracket { color: #D1EDFF; }
+.CodeMirror span.cm-tag { color: #449; }
+.CodeMirror span.cm-link { color: #AE81FF; }
+.CodeMirror span.cm-error { background: #F92672; color: #F8F8F0; }
+
+.CodeMirror .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}

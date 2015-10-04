@@ -1,0 +1,17 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+.CodeMirror span.cm-number, .CodeMirror span.cm-string, .CodeMirror span.cm-atom { color: #762; }
+.CodeMirror span.cm-comment { color: #262; font-style: italic; line-height: 1em; }
+.CodeMirror span.cm-meta { color: #555; font-style: italic; line-height: 1em; }
+.CodeMirror span.cm-variable { color: black; }
+.CodeMirror span.cm-variable-2 { color: #b11; }
+.CodeMirror span.cm-qualifier { color: #555; }
+.CodeMirror span.cm-keyword { color: #730; }
+.CodeMirror span.cm-builtin { color: #30a; }
+.CodeMirror span.cm-link { color: #762; }
+.CodeMirror span.cm-error { background-color: #fdd; }
+
+.CodeMirror .CodeMirror-activeline-background { background: #e8f2ff; }
+.CodeMirror .CodeMirror-matchingbracket { outline:1px solid grey; color:black !important; }

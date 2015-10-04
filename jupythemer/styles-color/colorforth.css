@@ -1,0 +1,37 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+.CodeMirror { background: #000000; color: #f8f8f8; }
+.CodeMirror .CodeMirror-gutters { background: #0a001f; border-right: 1px solid #aaa; }
+.CodeMirror .CodeMirror-guttermarker { color: #FFBD40; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #78846f; }
+.CodeMirror .CodeMirror-linenumber { color: #bababa; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid white; }
+
+.CodeMirror span.cm-comment     { color: #ededed; }
+.CodeMirror span.cm-def         { color: #ff1c1c; font-weight:bold; }
+.CodeMirror span.cm-keyword     { color: #ffd900; }
+.CodeMirror span.cm-builtin     { color: #00d95a; }
+.CodeMirror span.cm-variable    { color: #73ff00; }
+.CodeMirror span.cm-string      { color: #007bff; }
+.CodeMirror span.cm-number      { color: #00c4ff; }
+.CodeMirror span.cm-atom        { color: #606060; }
+
+.CodeMirror span.cm-variable-2  { color: #EEE; }
+.CodeMirror span.cm-variable-3  { color: #DDD; }
+.CodeMirror span.cm-property    {}
+.CodeMirror span.cm-operator    {}
+
+.CodeMirror span.cm-meta        { color: yellow; }
+.CodeMirror span.cm-qualifier   { color: #FFF700; }
+.CodeMirror span.cm-bracket     { color: #cc7; }
+.CodeMirror span.cm-tag         { color: #FFBD40; }
+.CodeMirror span.cm-attribute   { color: #FFF700; }
+.CodeMirror span.cm-error       { color: #f00; }
+
+.CodeMirror div.CodeMirror-selected { background: #333d53; }
+
+.CodeMirror span.cm-compilation { background: rgba(255, 255, 255, 0.12); }
+
+.CodeMirror .CodeMirror-activeline-background { background: #253540; }

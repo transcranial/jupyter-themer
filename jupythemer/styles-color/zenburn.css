@@ -1,0 +1,38 @@
+/**
+    Adapted for jupyter-themer from https://github.com/codemirror
+ * "
+ *  Using Zenburn color palette from the Emacs Zenburn Theme
+ *  https://github.com/bbatsov/zenburn-emacs/blob/master/zenburn-theme.el
+ *
+ *  Also using parts of https://github.com/xavi/coderay-lighttable-theme
+ * "
+ * From: https://github.com/wisenomad/zenburn-lighttable-theme/blob/master/zenburn.css
+ */
+
+.CodeMirror .CodeMirror-gutters { background: #3f3f3f !important; }
+.CodeMirror .CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded { color: #999; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid white; }
+.CodeMirror { background-color: #3f3f3f; color: #dcdccc; }
+.CodeMirror span.cm-builtin { color: #dcdccc; font-weight: bold; }
+.CodeMirror span.cm-comment { color: #7f9f7f; }
+.CodeMirror span.cm-keyword { color: #f0dfaf; font-weight: bold; }
+.CodeMirror span.cm-atom { color: #bfebbf; }
+.CodeMirror span.cm-def { color: #dcdccc; }
+.CodeMirror span.cm-variable { color: #dfaf8f; }
+.CodeMirror span.cm-variable-2 { color: #dcdccc; }
+.CodeMirror span.cm-string { color: #cc9393; }
+.CodeMirror span.cm-string-2 { color: #cc9393; }
+.CodeMirror span.cm-number { color: #dcdccc; }
+.CodeMirror span.cm-tag { color: #93e0e3; }
+.CodeMirror span.cm-property { color: #dfaf8f; }
+.CodeMirror span.cm-attribute { color: #dfaf8f; }
+.CodeMirror span.cm-qualifier { color: #7cb8bb; }
+.CodeMirror span.cm-meta { color: #f0dfaf; }
+.CodeMirror span.cm-header { color: #f0efd0; }
+.CodeMirror span.cm-operator { color: #f0efd0; }
+.CodeMirror span.CodeMirror-matchingbracket { box-sizing: border-box; background: transparent; border-bottom: 1px solid; }
+.CodeMirror span.CodeMirror-nonmatchingbracket { border-bottom: 1px solid; background: none; }
+.CodeMirror .CodeMirror-activeline { background: #000000; }
+.CodeMirror .CodeMirror-activeline-background { background: #000000; }
+.CodeMirror div.CodeMirror-selected { background: #545454; }
+.CodeMirror .CodeMirror-focused div.CodeMirror-selected { background: #4f4f4f; }

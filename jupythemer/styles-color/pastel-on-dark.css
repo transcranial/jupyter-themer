@@ -1,0 +1,57 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/**
+ * Pastel On Dark theme ported from ACE editor
+ * @license MIT
+ * @copyright AtomicPages LLC 2014
+ * @author Dennis Thompson, AtomicPages LLC
+ * @version 1.1
+ * @source https://github.com/atomicpages/codemirror-pastel-on-dark-theme
+ */
+
+.CodeMirror {
+	background: #2c2827;
+	color: #8F938F;
+	line-height: 1.5;
+	font-size: 14px;
+}
+.CodeMirror div.CodeMirror-selected { background: rgba(221,240,255,0.2); }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(221,240,255,0.2); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(221,240,255,0.2); }
+
+.CodeMirror .CodeMirror-gutters {
+	background: #34302f;
+	border-right: 0px;
+	padding: 0 3px;
+}
+.CodeMirror .CodeMirror-guttermarker { color: white; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #8F938F; }
+.CodeMirror .CodeMirror-linenumber { color: #8F938F; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #A7A7A7; }
+.CodeMirror span.cm-comment { color: #A6C6FF; }
+.CodeMirror span.cm-atom { color: #DE8E30; }
+.CodeMirror span.cm-number { color: #CCCCCC; }
+.CodeMirror span.cm-property { color: #8F938F; }
+.CodeMirror span.cm-attribute { color: #a6e22e; }
+.CodeMirror span.cm-keyword { color: #AEB2F8; }
+.CodeMirror span.cm-string { color: #66A968; }
+.CodeMirror span.cm-variable { color: #AEB2F8; }
+.CodeMirror span.cm-variable-2 { color: #BEBF55; }
+.CodeMirror span.cm-variable-3 { color: #DE8E30; }
+.CodeMirror span.cm-def { color: #757aD8; }
+.CodeMirror span.cm-bracket { color: #f8f8f2; }
+.CodeMirror span.cm-tag { color: #C1C144; }
+.CodeMirror span.cm-link { color: #ae81ff; }
+.CodeMirror span.cm-qualifier,.CodeMirror span.cm-builtin { color: #C1C144; }
+.CodeMirror span.cm-error {
+	background: #757aD8;
+	color: #f8f8f0;
+}
+.CodeMirror .CodeMirror-activeline-background { background: rgba(255, 255, 255, 0.031); }
+.CodeMirror .CodeMirror-matchingbracket {
+	border: 1px solid rgba(255,255,255,0.25);
+	color: #8F938F !important;
+	margin: -1px -1px 0 -1px;
+}

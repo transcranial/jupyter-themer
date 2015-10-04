@@ -1,0 +1,45 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+
+    Name:       yeti
+    Author:     Michael Kaminsky (http://github.com/mkaminsky11)
+
+    Original yeti color scheme by Jesse Weed (https://github.com/jesseweed/yeti-syntax)
+
+*/
+
+
+.CodeMirror {
+  background-color: #ECEAE8 !important;
+  color: #d1c9c0 !important;
+  border: none;
+}
+
+.CodeMirror .CodeMirror-gutters {
+  color: #adaba6;
+  background-color: #E5E1DB;
+  border: none;
+}
+.CodeMirror .CodeMirror-cursor { border-left: solid thin #d1c9c0; }
+.CodeMirror .CodeMirror-linenumber { color: #adaba6; }
+.cm-s-yeti.CodeMirror-focused div.CodeMirror-selected { background: #DCD8D2; }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: #DCD8D2; }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: #DCD8D2; }
+.CodeMirror span.cm-comment { color: #d4c8be; }
+.CodeMirror span.cm-string, .CodeMirror span.cm-string-2 { color: #96c0d8; }
+.CodeMirror span.cm-number { color: #a074c4; }
+.CodeMirror span.cm-variable { color: #55b5db; }
+.CodeMirror span.cm-variable-2 { color: #a074c4; }
+.CodeMirror span.cm-def { color: #55b5db; }
+.CodeMirror span.cm-operator { color: #9fb96e; }
+.CodeMirror span.cm-keyword { color: #9fb96e; }
+.CodeMirror span.cm-atom { color: #a074c4; }
+.CodeMirror span.cm-meta { color: #96c0d8; }
+.CodeMirror span.cm-tag { color: #96c0d8; }
+.CodeMirror span.cm-attribute { color: #9fb96e; }
+.CodeMirror span.cm-qualifier { color: #96c0d8; }
+.CodeMirror span.cm-property { color: #a074c4; }
+.CodeMirror span.cm-builtin { color: #a074c4; }
+.CodeMirror span.cm-variable-3 { color: #96c0d8; }
+.CodeMirror .CodeMirror-activeline-background { background: #E7E4E0; }
+.CodeMirror .CodeMirror-matchingbracket { text-decoration: underline; }

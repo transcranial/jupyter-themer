@@ -1,0 +1,55 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+
+Copyright (C) 2011 by MarkLogic Corporation
+Author: Mike Brevoort <mike@brevoort.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+.CodeMirror { background: #0a001f; color: #f8f8f8; }
+.CodeMirror div.CodeMirror-selected { background: #27007A; }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(39, 0, 122, 0.99); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(39, 0, 122, 0.99); }
+.CodeMirror .CodeMirror-gutters { background: #0a001f; border-right: 1px solid #aaa; }
+.CodeMirror .CodeMirror-guttermarker { color: #FFBD40; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #f8f8f8; }
+.CodeMirror .CodeMirror-linenumber { color: #f8f8f8; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid white; }
+
+.CodeMirror span.cm-keyword { color: #FFBD40; }
+.CodeMirror span.cm-atom { color: #6C8CD5; }
+.CodeMirror span.cm-number { color: #164; }
+.CodeMirror span.cm-def { color: #FFF; text-decoration:underline; }
+.CodeMirror span.cm-variable { color: #FFF; }
+.CodeMirror span.cm-variable-2 { color: #EEE; }
+.CodeMirror span.cm-variable-3 { color: #DDD; }
+.CodeMirror span.cm-property {}
+.CodeMirror span.cm-operator {}
+.CodeMirror span.cm-comment { color: gray; }
+.CodeMirror span.cm-string { color: #9FEE00; }
+.CodeMirror span.cm-meta { color: yellow; }
+.CodeMirror span.cm-qualifier { color: #FFF700; }
+.CodeMirror span.cm-builtin { color: #30a; }
+.CodeMirror span.cm-bracket { color: #cc7; }
+.CodeMirror span.cm-tag { color: #FFBD40; }
+.CodeMirror span.cm-attribute { color: #FFF700; }
+.CodeMirror span.cm-error { color: #f00; }
+
+.CodeMirror .CodeMirror-activeline-background { background: #27282E; }
+.CodeMirror .CodeMirror-matchingbracket { outline:1px solid grey; color:white !important; }

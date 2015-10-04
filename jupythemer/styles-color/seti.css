@@ -1,0 +1,48 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/*
+
+    Name:       seti
+    Author:     Michael Kaminsky (http://github.com/mkaminsky11)
+
+    Original seti color scheme by Jesse Weed (https://github.com/jesseweed/seti-syntax)
+
+*/
+
+
+.CodeMirror {
+  background-color: #151718 !important;
+  color: #CFD2D1 !important;
+  border: none;
+}
+.CodeMirror .CodeMirror-gutters {
+  color: #404b53;
+  background-color: #0E1112;
+  border: none;
+}
+.CodeMirror .CodeMirror-cursor { border-left: solid thin #f8f8f0; }
+.CodeMirror .CodeMirror-linenumber { color: #6D8A88; }
+.cm-s-seti.CodeMirror-focused div.CodeMirror-selected { background: rgba(255, 255, 255, 0.10); }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(255, 255, 255, 0.10); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, 0.10); }
+.CodeMirror span.cm-comment { color: #41535b; }
+.CodeMirror span.cm-string, .CodeMirror span.cm-string-2 { color: #55b5db; }
+.CodeMirror span.cm-number { color: #cd3f45; }
+.CodeMirror span.cm-variable { color: #55b5db; }
+.CodeMirror span.cm-variable-2 { color: #a074c4; }
+.CodeMirror span.cm-def { color: #55b5db; }
+.CodeMirror span.cm-keyword { color: #ff79c6; }
+.CodeMirror span.cm-operator { color: #9fca56; }
+.CodeMirror span.cm-keyword { color: #e6cd69; }
+.CodeMirror span.cm-atom { color: #cd3f45; }
+.CodeMirror span.cm-meta { color: #55b5db; }
+.CodeMirror span.cm-tag { color: #55b5db; }
+.CodeMirror span.cm-attribute { color: #9fca56; }
+.CodeMirror span.cm-qualifier { color: #9fca56; }
+.CodeMirror span.cm-property { color: #a074c4; }
+.CodeMirror span.cm-variable-3 { color: #9fca56; }
+.CodeMirror span.cm-builtin { color: #9fca56; }
+.CodeMirror .CodeMirror-activeline-background { background: #101213; }
+.CodeMirror .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }

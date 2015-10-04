@@ -1,0 +1,37 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+    /* Taken from the popular Visual Studio Vibrant Ink Schema */
+
+.CodeMirror { background: black; color: white; }
+.CodeMirror div.CodeMirror-selected { background: #35493c; }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(53, 73, 60, 0.99); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(53, 73, 60, 0.99); }
+
+.CodeMirror .CodeMirror-gutters { background: #002240; border-right: 1px solid #aaa; }
+.CodeMirror .CodeMirror-guttermarker { color: white; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #d0d0d0; }
+.CodeMirror .CodeMirror-linenumber { color: #d0d0d0; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid white; }
+
+.CodeMirror .cm-keyword { color: #CC7832; }
+.CodeMirror .cm-atom { color: #FC0; }
+.CodeMirror .cm-number { color:  #FFEE98; }
+.CodeMirror .cm-def { color: #8DA6CE; }
+.CodeMirror span.cm-variable-2, .cm-s-vibrant span.cm-tag { color: #FFC66D; }
+.CodeMirror span.cm-variable-3, .cm-s-vibrant span.cm-def { color: #FFC66D; }
+.CodeMirror .cm-operator { color: #888; }
+.CodeMirror .cm-comment { color: gray; font-weight: bold; }
+.CodeMirror .cm-string { color:  #A5C25C; }
+.CodeMirror .cm-string-2 { color: red; }
+.CodeMirror .cm-meta { color: #D8FA3C; }
+.CodeMirror .cm-builtin { color: #8DA6CE; }
+.CodeMirror .cm-tag { color: #8DA6CE; }
+.CodeMirror .cm-attribute { color: #8DA6CE; }
+.CodeMirror .cm-header { color: #FF6400; }
+.CodeMirror .cm-hr { color: #AEAEAE; }
+.CodeMirror .cm-link { color: blue; }
+.CodeMirror .cm-error { border-bottom: 1px solid red; }
+
+.CodeMirror .CodeMirror-activeline-background { background: #27282E; }
+.CodeMirror .CodeMirror-matchingbracket { outline:1px solid grey; color:white !important; }

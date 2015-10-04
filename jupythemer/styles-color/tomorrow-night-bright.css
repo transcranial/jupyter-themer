@@ -1,0 +1,39 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/*
+
+    Name:       Tomorrow Night - Bright
+    Author:     Chris Kempson
+
+    Port done by Gerard Braad <me@gbraad.nl>
+
+*/
+
+.CodeMirror { background: #000000; color: #eaeaea; }
+.CodeMirror div.CodeMirror-selected { background: #424242; }
+.CodeMirror .CodeMirror-gutters { background: #000000; border-right: 0px; }
+.CodeMirror .CodeMirror-guttermarker { color: #e78c45; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #777; }
+.CodeMirror .CodeMirror-linenumber { color: #424242; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #6A6A6A; }
+
+.CodeMirror span.cm-comment { color: #d27b53; }
+.CodeMirror span.cm-atom { color: #a16a94; }
+.CodeMirror span.cm-number { color: #a16a94; }
+
+.CodeMirror span.cm-property, .CodeMirror span.cm-attribute { color: #99cc99; }
+.CodeMirror span.cm-keyword { color: #d54e53; }
+.CodeMirror span.cm-string { color: #e7c547; }
+
+.CodeMirror span.cm-variable { color: #b9ca4a; }
+.CodeMirror span.cm-variable-2 { color: #7aa6da; }
+.CodeMirror span.cm-def { color: #e78c45; }
+.CodeMirror span.cm-bracket { color: #eaeaea; }
+.CodeMirror span.cm-tag { color: #d54e53; }
+.CodeMirror span.cm-link { color: #a16a94; }
+.CodeMirror span.cm-error { background: #d54e53; color: #6A6A6A; }
+
+.CodeMirror .CodeMirror-activeline-background { background: #2a2a2a; }
+.CodeMirror .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }

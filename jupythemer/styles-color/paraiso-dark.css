@@ -1,0 +1,42 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/*
+
+    Name:       Paraíso (Dark)
+    Author:     Jan T. Sott
+
+    Color scheme by Jan T. Sott (https://github.com/idleberg/Paraiso-CodeMirror)
+    Inspired by the art of Rubens LP (http://www.rubenslp.com.br)
+
+*/
+
+.CodeMirror { background: #2f1e2e; color: #b9b6b0; }
+.CodeMirror div.CodeMirror-selected { background: #41323f; }
+.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(65, 50, 63, .99); }
+.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(65, 50, 63, .99); }
+.CodeMirror .CodeMirror-gutters { background: #2f1e2e; border-right: 0px; }
+.CodeMirror .CodeMirror-guttermarker { color: #ef6155; }
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #776e71; }
+.CodeMirror .CodeMirror-linenumber { color: #776e71; }
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #8d8687; }
+
+.CodeMirror span.cm-comment { color: #e96ba8; }
+.CodeMirror span.cm-atom { color: #815ba4; }
+.CodeMirror span.cm-number { color: #815ba4; }
+
+.CodeMirror span.cm-property, .CodeMirror span.cm-attribute { color: #48b685; }
+.CodeMirror span.cm-keyword { color: #ef6155; }
+.CodeMirror span.cm-string { color: #fec418; }
+
+.CodeMirror span.cm-variable { color: #48b685; }
+.CodeMirror span.cm-variable-2 { color: #06b6ef; }
+.CodeMirror span.cm-def { color: #f99b15; }
+.CodeMirror span.cm-bracket { color: #b9b6b0; }
+.CodeMirror span.cm-tag { color: #ef6155; }
+.CodeMirror span.cm-link { color: #815ba4; }
+.CodeMirror span.cm-error { background: #ef6155; color: #8d8687; }
+
+.CodeMirror .CodeMirror-activeline-background { background: #4D344A; }
+.CodeMirror .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }
