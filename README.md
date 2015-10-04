@@ -1,8 +1,8 @@
-# jupyter-notebook-css
+# jupyter-themer
 
-CSS themes for Jupyter notebooks
+Apply custom CSS styling to your jupyter notebooks.
 
-## Installation
+### Installation
 
 Run the installation script with the theme (folder) name as the argument:
 
@@ -17,5 +17,3 @@ To revert back to the default:
 ```
 ./install.sh default
 ```
-
-## Screenshots
