@@ -22,4 +22,6 @@ setup(
         ]
     },
     install_requires=['jupyter', 'notebook'],
+    download_url = 'https://github.com/transcranial/jupyter-themer/tarball/0.1.0',
+    keywords = ['jupyter', 'ipython', 'notebook', 'themes', 'css'],
 )
