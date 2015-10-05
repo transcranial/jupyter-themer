@@ -1,11 +1,10 @@
 from setuptools import setup, find_packages
 
-with open('README.md', 'r') as f:
-    long_description = f.read()
+long_description = 'Apply custom CSS styling to your jupyter notebooks.\n\nMix and match themes by:\n\n- color\n- layout\n- typography\n'
 
 setup(
     name='jupyter-themer',
-    version='0.1.0',
+    version='0.1.2',
     license='MIT',
     description='Custom CSS themer for jupyter notebooks',
     long_description=long_description,
@@ -22,6 +21,5 @@ setup(
         ]
     },
     install_requires=['jupyter', 'notebook'],
-    download_url = 'https://github.com/transcranial/jupyter-themer/tarball/0.1.0',
     keywords = ['jupyter', 'ipython', 'notebook', 'themes', 'css'],
 )
