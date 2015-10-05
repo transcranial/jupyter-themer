@@ -1,6 +1,8 @@
 # jupyter-themer
 
-Apply custom CSS styling to your jupyter notebooks.
+![https://travis-ci.org/transcranial/jupyter-themer](https://travis-ci.org/transcranial/jupyter-themer.svg?branch=master) ![https://pypi.python.org/pypi/jupyter-themer/0.1.0](https://img.shields.io/pypi/v/jupyter-themer.svg)
+
+Apply custom CSS styling to your jupyter notebooks. Contributions are welcome!
 
 Mix and match themes by:
 
