@@ -19,13 +19,13 @@ def write_to_css(content):
         sys.exit(1)
 
 
-def run():
-    parser = argparse.ArgumentParser(description='Jupyter notebook themer.')
-    parser.add_argument('-c', '--color', required=False, dest='color', default=None, help='color style')
-    parser.add_argument('-l', '--layout', required=False, dest='layout', default=None, help='layout style')
-    parser.add_argument('-t', '--typography', required=False, dest='typography', default=None, help='typography style')
-
-    args = parser.parse_args()
+def run(args=None):
+    if args is None:
+        parser = argparse.ArgumentParser(description='Jupyter notebook themer.')
+        parser.add_argument('-c', '--color', required=False, dest='color', default=None, help='color style')
+        parser.add_argument('-l', '--layout', required=False, dest='layout', default=None, help='layout style')
+        parser.add_argument('-t', '--typography', required=False, dest='typography', default=None, help='typography style')
+        args = parser.parse_args()
 
     if args.color is None and args.layout is None and args.typography is None:
         print('Jupyter notebook reverted to default style.')
@@ -35,24 +35,24 @@ def run():
     content_all = ''
     if args.color is not None:
         try:
-            with open('{}/styles-color/{}.css'.format(current_dir, args.color), 'r') as f_color:
-                content_all += f_color.read()
+            with open('{}/styles/color/{}.css'.format(current_dir, args.color), 'r') as f_color:
+                content_all += f_color.read() + '\n'
         except:
             print('Bad argument passed to --color')
             sys.exit(1)
 
     if args.layout is not None:
         try:
-            with open('{}/styles-layout/{}.css'.format(current_dir, args.layout), 'r') as f_layout:
-                content_all += f_layout.read()
+            with open('{}/styles/layout/{}.css'.format(current_dir, args.layout), 'r') as f_layout:
+                content_all += f_layout.read() + '\n'
         except:
             print('Bad argument passed to --layout')
             sys.exit(1)
 
     if args.typography is not None:
         try:
-            with open('{}/styles-typography/{}.css'.format(current_dir, args.typography), 'r') as f_typography:
-                content_all += f_typography.read()
+            with open('{}/styles/typography/{}.css'.format(current_dir, args.typography), 'r') as f_typography:
+                content_all += f_typography.read() + '\n'
         except:
             print('Bad argument passed to --typography')
             sys.exit(1)
