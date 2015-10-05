@@ -11,12 +11,12 @@
   color:#2e383c;
   line-height:1.4375;
 }
-.CodeMirror .cm-comment { color:#75787b; }
-.CodeMirror .cm-keyword, .CodeMirror .cm-property { color:#1d75b3; }
-.CodeMirror .cm-atom,.CodeMirror .cm-number { color:#75438a; }
-.CodeMirror .cm-node,.CodeMirror .cm-tag { color:#9c3328; }
-.CodeMirror .cm-string { color:#b35e14; }
-.CodeMirror .cm-variable,.CodeMirror .cm-qualifier { color:#047d65; }
+.CodeMirror span.cm-comment { color:#75787b; }
+.CodeMirror span.cm-keyword, .CodeMirror span.cm-property { color:#1d75b3; }
+.CodeMirror span.cm-atom,.CodeMirror span.cm-number { color:#75438a; }
+.CodeMirror span.cm-node,.CodeMirror span.cm-tag { color:#9c3328; }
+.CodeMirror span.cm-string { color:#b35e14; }
+.CodeMirror span.cm-variable,.CodeMirror span.cm-qualifier { color:#047d65; }
 
 
 /* Editor styling */

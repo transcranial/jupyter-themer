@@ -20,7 +20,7 @@
 .CodeMirror span.cm-keyword { color: #599eff; }
 .CodeMirror span.cm-string { color: #37f14a; }
 .CodeMirror span.cm-meta { color: #7678e2; }
-.CodeMirror span.cm-variable-2, .CodeMirror span.cm-tag { color: #99b2ff; }
+.CodeMirror span.cm-variable, .CodeMirror span.cm-variable-2, .CodeMirror span.cm-tag { color: #99b2ff; }
 .CodeMirror span.cm-variable-3, .CodeMirror span.cm-def { color: white; }
 .CodeMirror span.cm-bracket { color: #8da6ce; }
 .CodeMirror span.cm-comment { color: #6900a1; }

@@ -20,29 +20,29 @@
 .CodeMirror .CodeMirror-linenumber { color: #aaa; padding-left: 8px; }
 .CodeMirror .CodeMirror-cursor { border-left: 2px solid #222; }
 
-.CodeMirror .cm-keyword { color: #6262FF; }
-.CodeMirror .cm-atom { color: #F90; }
-.CodeMirror .cm-number { color:  #ca7841; }
-.CodeMirror .cm-def { color: #8DA6CE; }
+.CodeMirror span.cm-keyword { color: #6262FF; }
+.CodeMirror span.cm-atom { color: #F90; }
+.CodeMirror span.cm-number { color:  #ca7841; }
+.CodeMirror span.cm-def { color: #8DA6CE; }
 .CodeMirror span.cm-variable-2, .CodeMirror span.cm-tag { color: #690; }
 .CodeMirror span.cm-variable-3, .CodeMirror span.cm-def { color: #07a; }
 
-.CodeMirror .cm-variable { color: #07a; }
-.CodeMirror .cm-property { color: #905; }
-.CodeMirror .cm-qualifier { color: #690; }
+.CodeMirror span.cm-variable { color: #07a; }
+.CodeMirror span.cm-property { color: #905; }
+.CodeMirror span.cm-qualifier { color: #690; }
 
-.CodeMirror .cm-operator { color: #cda869; }
-.CodeMirror .cm-comment { color:#777; font-weight:normal; }
-.CodeMirror .cm-string { color:#07a; font-style:italic; }
-.CodeMirror .cm-string-2 { color:#bd6b18; } /*?*/
-.CodeMirror .cm-meta { color: #000; } /*?*/
-.CodeMirror .cm-builtin { color: #9B7536; } /*?*/
-.CodeMirror .cm-tag { color: #997643; }
-.CodeMirror .cm-attribute { color: #d6bb6d; } /*?*/
-.CodeMirror .cm-header { color: #FF6400; }
-.CodeMirror .cm-hr { color: #AEAEAE; }
-.CodeMirror .cm-link { color:#ad9361; font-style:italic; text-decoration:none; }
-.CodeMirror .cm-error { border-bottom: 1px solid red; }
+.CodeMirror span.cm-operator { color: #cda869; }
+.CodeMirror span.cm-comment { color:#777; font-weight:normal; }
+.CodeMirror span.cm-string { color:#07a; font-style:italic; }
+.CodeMirror span.cm-string-2 { color:#bd6b18; } /*?*/
+.CodeMirror span.cm-meta { color: #000; } /*?*/
+.CodeMirror span.cm-builtin { color: #9B7536; } /*?*/
+.CodeMirror span.cm-tag { color: #997643; }
+.CodeMirror span.cm-attribute { color: #d6bb6d; } /*?*/
+.CodeMirror span.cm-header { color: #FF6400; }
+.CodeMirror span.cm-hr { color: #AEAEAE; }
+.CodeMirror span.cm-link { color:#ad9361; font-style:italic; text-decoration:none; }
+.CodeMirror span.cm-error { border-bottom: 1px solid red; }
 
 div.CodeMirror .CodeMirror-activeline-background { background: #efefff; }
 div.CodeMirror span.CodeMirror-matchingbracket { outline:1px solid grey; color: inherit; }

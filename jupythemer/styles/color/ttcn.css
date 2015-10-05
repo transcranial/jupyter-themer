@@ -1,0 +1,68 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+.CodeMirror span.cm-quote { color: #090; }
+.CodeMirror span.cm-negative { color: #d44; }
+.CodeMirror span.cm-positive { color: #292; }
+.CodeMirror span.cm-header, span.cm-strong { font-weight: bold; }
+.CodeMirror span.cm-em { font-style: italic; }
+.CodeMirror span.cm-link { text-decoration: underline; }
+.CodeMirror span.cm-strikethrough { text-decoration: line-through; }
+.CodeMirror span.cm-header { color: #00f; font-weight: bold; }
+
+.CodeMirror span.cm-atom { color: #219; }
+.CodeMirror span.cm-attribute { color: #00c; }
+.CodeMirror span.cm-bracket { color: #997; }
+.CodeMirror span.cm-comment { color: #333333; }
+.CodeMirror span.cm-def { color: #00f; }
+.CodeMirror span.cm-em { font-style: italic; }
+.CodeMirror span.cm-error { color: #f00; }
+.CodeMirror span.cm-hr { color: #999; }
+.CodeMirror span.cm-invalidchar { color: #f00; }
+.CodeMirror span.cm-keyword { font-weight:bold; }
+.CodeMirror span.cm-link { color: #00c; text-decoration: underline; }
+.CodeMirror span.cm-meta { color: #555; }
+.CodeMirror span.cm-negative { color: #d44; }
+.CodeMirror span.cm-positive { color: #292; }
+.CodeMirror span.cm-qualifier { color: #555; }
+.CodeMirror span.cm-strikethrough { text-decoration: line-through; }
+.CodeMirror span.cm-string { color: #006400; }
+.CodeMirror span.cm-string-2 { color: #f50; }
+.CodeMirror span.cm-strong { font-weight: bold; }
+.CodeMirror span.cm-tag { color: #170; }
+.CodeMirror span.cm-variable { color: #8B2252; }
+.CodeMirror span.cm-variable-2 { color: #05a; }
+.CodeMirror span.cm-variable-3 { color: #085; }
+
+.CodeMirror span.cm-invalidchar { color: #f00; }
+
+/* ASN */
+.CodeMirror span.cm-accessTypes,
+.CodeMirror span.cm-compareTypes { color: #27408B; }
+.CodeMirror span.cm-cmipVerbs { color: #8B2252; }
+.CodeMirror span.cm-modifier { color:#D2691E; }
+.CodeMirror span.cm-status { color:#8B4545; }
+.CodeMirror span.cm-storage { color:#A020F0; }
+.CodeMirror span.cm-tags { color:#006400; }
+
+/* CFG */
+.CodeMirror span.cm-externalCommands { color: #8B4545; font-weight:bold; }
+.CodeMirror span.cm-fileNCtrlMaskOptions,
+.CodeMirror span.cm-sectionTitle { color: #2E8B57; font-weight:bold; }
+
+/* TTCN */
+.CodeMirror span.cm-booleanConsts,
+.CodeMirror span.cm-otherConsts,
+.CodeMirror span.cm-verdictConsts { color: #006400; }
+.CodeMirror span.cm-configOps,
+.CodeMirror span.cm-functionOps,
+.CodeMirror span.cm-portOps,
+.CodeMirror span.cm-sutOps,
+.CodeMirror span.cm-timerOps,
+.CodeMirror span.cm-verdictOps { color: #0000FF; }
+.CodeMirror span.cm-preprocessor,
+.CodeMirror span.cm-templateMatch,
+.CodeMirror span.cm-ttcn3Macros { color: #27408B; }
+.CodeMirror span.cm-types { color: #A52A2A; font-weight:bold; }
+.CodeMirror span.cm-visibilityModifiers { font-weight:bold; }

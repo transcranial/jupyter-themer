@@ -6,31 +6,31 @@
 
 /* Color scheme */
 
-.CodeMirror .cm-header { color: blue; }
-.CodeMirror .cm-quote { color: #24C2C7; }
+.CodeMirror span.cm-header { color: blue; }
+.CodeMirror span.cm-quote { color: #24C2C7; }
 
-.CodeMirror .cm-keyword { color: #cda869; }
-.CodeMirror .cm-atom { color: #CF7EA9; }
-.CodeMirror .cm-number { color: #78CF8A; }
-.CodeMirror .cm-def { color: #aac6e3; }
-.CodeMirror .cm-variable { color: #ffb795; }
-.CodeMirror .cm-variable-2 { color: #eed1b3; }
-.CodeMirror .cm-variable-3 { color: #faded3; }
-.CodeMirror .cm-property { color: #eed1b3; }
-.CodeMirror .cm-operator { color: #fa8d6a; }
-.CodeMirror .cm-comment { color: #555; font-style:italic; }
-.CodeMirror .cm-string { color: #8f9d6a; }
-.CodeMirror .cm-string-2 { color: #9d937c; }
-.CodeMirror .cm-meta { color: #D2A8A1; }
-.CodeMirror .cm-qualifier { color: yellow; }
-.CodeMirror .cm-builtin { color: #9999cc; }
-.CodeMirror .cm-bracket { color: #24C2C7; }
-.CodeMirror .cm-tag { color: #fee4ff; }
-.CodeMirror .cm-attribute { color: #9B859D; }
-.CodeMirror .cm-hr { color: pink; }
-.CodeMirror .cm-link { color: #F4C20B; }
-.CodeMirror .cm-special { color: #FF9D00; }
-.CodeMirror .cm-error { color: #AF2018; }
+.CodeMirror span.cm-keyword { color: #cda869; }
+.CodeMirror span.cm-atom { color: #CF7EA9; }
+.CodeMirror span.cm-number { color: #78CF8A; }
+.CodeMirror span.cm-def { color: #aac6e3; }
+.CodeMirror span.cm-variable { color: #ffb795; }
+.CodeMirror span.cm-variable-2 { color: #eed1b3; }
+.CodeMirror span.cm-variable-3 { color: #faded3; }
+.CodeMirror span.cm-property { color: #eed1b3; }
+.CodeMirror span.cm-operator { color: #fa8d6a; }
+.CodeMirror span.cm-comment { color: #555; font-style:italic; }
+.CodeMirror span.cm-string { color: #8f9d6a; }
+.CodeMirror span.cm-string-2 { color: #9d937c; }
+.CodeMirror span.cm-meta { color: #D2A8A1; }
+.CodeMirror span.cm-qualifier { color: yellow; }
+.CodeMirror span.cm-builtin { color: #9999cc; }
+.CodeMirror span.cm-bracket { color: #24C2C7; }
+.CodeMirror span.cm-tag { color: #fee4ff; }
+.CodeMirror span.cm-attribute { color: #9B859D; }
+.CodeMirror span.cm-hr { color: pink; }
+.CodeMirror span.cm-link { color: #F4C20B; }
+.CodeMirror span.cm-special { color: #FF9D00; }
+.CodeMirror span.cm-error { color: #AF2018; }
 
 .CodeMirror .CodeMirror-matchingbracket { color: #0f0; }
 .CodeMirror .CodeMirror-nonmatchingbracket { color: #f22; }

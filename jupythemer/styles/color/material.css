@@ -28,29 +28,29 @@
 .CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(255, 255, 255, 0.10); }
 
 .CodeMirror .CodeMirror-activeline-background { background: rgba(0, 0, 0, 0); }
-.CodeMirror .cm-keyword { color: rgba(199, 146, 234, 1); }
-.CodeMirror .cm-operator { color: rgba(233, 237, 237, 1); }
-.CodeMirror .cm-variable-2 { color: #80CBC4; }
-.CodeMirror .cm-variable-3 { color: #82B1FF; }
-.CodeMirror .cm-builtin { color: #DECB6B; }
-.CodeMirror .cm-atom { color: #F77669; }
-.CodeMirror .cm-number { color: #F77669; }
-.CodeMirror .cm-def { color: rgba(233, 237, 237, 1); }
-.CodeMirror .cm-error {
+.CodeMirror span.cm-keyword { color: rgba(199, 146, 234, 1); }
+.CodeMirror span.cm-operator { color: rgba(233, 237, 237, 1); }
+.CodeMirror span.cm-variable-2 { color: #80CBC4; }
+.CodeMirror span.cm-variable-3 { color: #82B1FF; }
+.CodeMirror span.cm-builtin { color: #DECB6B; }
+.CodeMirror span.cm-atom { color: #F77669; }
+.CodeMirror span.cm-number { color: #F77669; }
+.CodeMirror span.cm-def { color: rgba(233, 237, 237, 1); }
+.CodeMirror span.cm-error {
   color: rgba(255, 255, 255, 1.0);
   background-color: #EC5F67;
 }
-.CodeMirror .cm-string { color: #C3E88D; }
-.CodeMirror .cm-string-2 { color: #80CBC4; }
-.CodeMirror .cm-comment { color: #546E7A; }
-.CodeMirror .cm-variable { color: #82B1FF; }
-.CodeMirror .cm-tag { color: #80CBC4; }
-.CodeMirror .cm-meta { color: #80CBC4; }
-.CodeMirror .cm-attribute { color: #FFCB6B; }
-.CodeMirror .cm-property { color: #80CBAE; }
-.CodeMirror .cm-qualifier { color: #DECB6B; }
-.CodeMirror .cm-variable-3 { color: #DECB6B; }
-.CodeMirror .cm-tag { color: rgba(255, 83, 112, 1); }
+.CodeMirror span.cm-string { color: #C3E88D; }
+.CodeMirror span.cm-string-2 { color: #80CBC4; }
+.CodeMirror span.cm-comment { color: #546E7A; }
+.CodeMirror span.cm-variable { color: #82B1FF; }
+.CodeMirror span.cm-tag { color: #80CBC4; }
+.CodeMirror span.cm-meta { color: #80CBC4; }
+.CodeMirror span.cm-attribute { color: #FFCB6B; }
+.CodeMirror span.cm-property { color: #80CBAE; }
+.CodeMirror span.cm-qualifier { color: #DECB6B; }
+.CodeMirror span.cm-variable-3 { color: #DECB6B; }
+.CodeMirror span.cm-tag { color: rgba(255, 83, 112, 1); }
 .CodeMirror .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: white !important;

@@ -1,0 +1,16 @@
+div.code_cell {
+  margin: 2em 0;
+}
+
+div.text_cell {
+  margin: 1em 0;
+}
+
+div.input {
+  padding: 1em;
+}
+
+div.input_area .CodeMirror {
+  line-height: 1.7em;
+  padding: 1em;
+}
