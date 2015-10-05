@@ -36,6 +36,8 @@ python setup.py install
 
 ### Usage
 
+NOTE: Old ipython configuration files, for example at the default `~/.ipython`, may need to be removed in order for jupyter to use the correct files.
+
 ```sh
 usage: jupyter-themer [-c COLOR, --color COLOR]
                       [-l LAYOUT, --layout LAYOUT]
