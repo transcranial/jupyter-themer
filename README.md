@@ -4,9 +4,21 @@ Apply custom CSS styling to your jupyter notebooks.
 
 Mix and match themes by:
 
-- color
-- layout
-- typography
+- layout (example: `wide`)
+
+![layout](images/layout.png)
+
+- typography (example: `serif`)
+
+![typography](images/typography.png)
+
+- color (example: `night`)
+
+![color](images/color.png)
+
+You can always revert back to the default:
+
+![default](images/default.png)
 
 ### Installation
 
@@ -81,7 +93,11 @@ For all running notebooks, a quick browser refresh will be needed to apply the s
 
 ##### `-l, --layout`
 
+- `wide`
+
 ##### `-t, --typograhy`
+
+- `serif`
 
 ### License
 
