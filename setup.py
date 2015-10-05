@@ -12,11 +12,14 @@ setup(
     author='Leon Chen',
     author_email='lchen3@gmail.com',
     url='https://github.com/transcranial/jupyter-themer',
-    packages=find_packages(exclude=['*test*']),
-    package_data={'': ['LICENSE']},
+    packages = find_packages(exclude=['*test*']),
+    package_data = {
+        'jupythemer': ['styles/**/*.css']
+    },
     entry_points = {
         'console_scripts' : [
-            'jupyter-themer = jupythemer:run'
+            'jupyter-themer = jupythemer.jupythemer:run'
         ]
     },
-    install_requires=[])
+    install_requires=['jupyter', 'notebook'],
+)
