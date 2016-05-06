@@ -24,15 +24,33 @@ def run(args=None):
         parser = argparse.ArgumentParser(description='Jupyter notebook themer.')
         parser.add_argument('-c', '--color', required=False, dest='color', default=None, help='color style')
         parser.add_argument('-l', '--layout', required=False, dest='layout', default=None, help='layout style')
-        parser.add_argument('-t', '--typography', required=False, dest='typography', default=None, help='typography style')
+        parser.add_argument('-t', '--typography', required=False, dest='typography',
+                            default=None, help='typography style')
+
+        parser.add_argument('-f', '--font', required=False, dest='font', default=None, help='code font family')
         args = parser.parse_args()
 
-    if args.color is None and args.layout is None and args.typography is None:
+    if args.color is None and args.layout is None and args.typography is None and args.font is None:
         print('Jupyter notebook reverted to default style.')
         write_to_css('')
         sys.exit()
 
     content_all = ''
+
+    if args.typography is not None and args.font is not None:
+        try:
+            with open('{}/styles/typography/{}.import'.format(current_dir, args.typography), 'r') as f_color:
+                content_all += f_color.read() + '\n'
+        except:
+            print('Bad argument passed to --typography')
+            sys.exit(1)
+        try:
+            with open('{}/styles/code_font/{}.import'.format(current_dir, args.font), 'r') as f_font:
+                content_all += f_font.read() + '\n'
+        except:
+            print('Bad argument passed to --font')
+            sys.exit(1)
+
     if args.color is not None:
         try:
             with open('{}/styles/color/{}.css'.format(current_dir, args.color), 'r') as f_color:
@@ -55,6 +73,14 @@ def run(args=None):
                 content_all += f_typography.read() + '\n'
         except:
             print('Bad argument passed to --typography')
+            sys.exit(1)
+
+    if args.font is not None:
+        try:
+            with open('{}/styles/code_font/{}.css'.format(current_dir, args.font), 'r') as f_font:
+                content_all += f_font.read() + '\n'
+        except:
+            print('Bad argument passed to --font')
             sys.exit(1)
 
     write_to_css(content_all)
