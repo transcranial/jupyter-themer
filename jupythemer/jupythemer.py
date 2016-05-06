@@ -38,14 +38,6 @@ def run(args=None):
 
     content_all = ''
 
-    if args.background is not None:
-        try:
-            with open('{}/styles/background/{}.css'.format(current_dir, args.background), 'r') as f_background:
-                content_all += f_background.read() + '\n'
-        except:
-            print('Bad argument passed to --background')
-            sys.exit(1)
-
     if args.typography is not None and args.font is not None:
         try:
             with open('{}/styles/typography/{}.import'.format(current_dir, args.typography), 'r') as f_color:
@@ -90,6 +82,14 @@ def run(args=None):
                 content_all += f_font.read() + '\n'
         except:
             print('Bad argument passed to --font')
+            sys.exit(1)
+
+    if args.background is not None:
+        try:
+            with open('{}/styles/background/{}.css'.format(current_dir, args.background), 'r') as f_background:
+                content_all += f_background.read() + '\n'
+        except:
+            print('Bad argument passed to --background')
             sys.exit(1)
 
     write_to_css(content_all)

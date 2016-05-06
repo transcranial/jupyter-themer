@@ -347,38 +347,6 @@ span.ansipurple {color: #9b859d;}
 span.ansired {color: #cf6a4c;}
 span.ansiyellow {color: #f9ee98;}
 
-/*
-  Code editing
-*/
-
-.CodeMirror {background: #141414; color: #F8F8F8;}
-div.CodeMirror-selected {background: rgba(221, 240, 255, 0.19) !important;}
-#texteditor-backdrop #texteditor-container .CodeMirror-gutter, .CodeMirror-gutters {background: #444; border-right: 0px; color: #777;}
-.CodeMirror-linenumber {color: #b4b7b4;}
-.CodeMirror-cursor {border-left: 1px solid #A7A7A7 !important; margin-top: -2px; min-height: 18px;}
-
-.CodeMirror span.cm-comment {color: #5F5A60; font-style: italic;}
-.CodeMirror span.cm-atom {color: #CF6A4C;}
-.CodeMirror span.cm-number {color: #CF6A4C;}
-
-.CodeMirror span.cm-property {color: #F8F8F8;}
-.CodeMirror span.cm-attribute {color: #198844;}
-.CodeMirror span.cm-keyword {color: #CDA869; font-weight: normal;}
-.CodeMirror span.cm-string {color: #8F9D6A;}
-.CodeMirror span.cm-string-2 {color: #E9C062;} /* regexp */
-.CodeMirror span.cm-operator {color: #CDA869;}
-.CodeMirror span.cm-builtin {color: #A36AC7;}
-
-.CodeMirror span.cm-variable {color: #F8F8F8;}
-.CodeMirror span.cm-variable-2 {color: #7587A6;}
-.CodeMirror span.cm-variable-3 {color: #7587A6;}
-.CodeMirror span.cm-def {color: #9B703F;}
-.CodeMirror span.cm-error {color: #F8F8F8; background-color: rgba(86, 45, 86, 0.2);}
-.CodeMirror span.cm-bracket {color: #373b41;}
-.CodeMirror span.cm-tag {color: #7587A6;}
-.CodeMirror span.cm-link {color: #A36AC7;}
-
-.CodeMirror .CodeMirror-matchingbracket { background-color: #dd3; color: #303030 !important;}
 
 /*
   Markdown editing
