@@ -26,8 +26,9 @@ def run(args=None):
         parser.add_argument('-l', '--layout', required=False, dest='layout', default=None, help='layout style')
         parser.add_argument('-t', '--typography', required=False, dest='typography',
                             default=None, help='typography style')
-
         parser.add_argument('-f', '--font', required=False, dest='font', default=None, help='code font family')
+        parser.add_argument('-b', '--background', required=False, dest='background',
+                            default=None, help='background theme styling')
         args = parser.parse_args()
 
     if args.color is None and args.layout is None and args.typography is None and args.font is None:
@@ -36,6 +37,14 @@ def run(args=None):
         sys.exit()
 
     content_all = ''
+
+    if args.background is not None:
+        try:
+            with open('{}/styles/background/{}.css'.format(current_dir, args.background), 'r') as f_background:
+                content_all += f_background.read() + '\n'
+        except:
+            print('Bad argument passed to --background')
+            sys.exit(1)
 
     if args.typography is not None and args.font is not None:
         try:
