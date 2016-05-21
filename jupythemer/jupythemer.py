@@ -1,13 +1,13 @@
 from __future__ import print_function
 
-import jupyter
+import notebook
 import os
 import sys
 import argparse
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
-jupyter_dir = os.path.dirname(jupyter.__file__)
-custom_css_filepath = jupyter_dir + '/notebook/static/custom/custom.css'
+notebook_dir = os.path.dirname(notebook.__file__)
+custom_css_filepath = notebook_dir + '/static/custom/custom.css'
 
 
 def write_to_css(content):
@@ -31,7 +31,11 @@ def run(args=None):
                             default=None, help='background theme styling')
         args = parser.parse_args()
 
-    if args.color is None and args.layout is None and args.typography is None and args.font is None:
+    if (args.color is None
+            and args.layout is None
+            and args.typography is None
+            and args.font is None
+            and args.background is None):
         print('Jupyter notebook reverted to default style.')
         write_to_css('')
         sys.exit()
