@@ -42,11 +42,13 @@ NOTE: Old ipython configuration files, for example at the default `~/.ipython`, 
 usage: jupyter-themer [-c COLOR, --color COLOR]
                       [-l LAYOUT, --layout LAYOUT]
                       [-t TYPOGRAPHY, --typography TYPOGRAPHY]
+                      [-f CODE_FONT, --font CODE_FONT]
+                      [-b BACKGROUND, --background BACKGROUnD]
 ```
 
 If no arguments are supplied, the program will revert the jupyter notebook style back to default.
 
-One, two, or all three style types can be specified, and the program will mix together the associated color/layout/typographic css files accordingly, writing it to the `custom.css` file used by the notebook.
+Any combination of the style types can be specified, and the program will mix together the associated color/layout/typographic/code font/background css files accordingly, writing it to the `custom.css` file used by the notebook.
 
 For all running notebooks, a quick browser refresh will be needed to apply the stylesheet.
 
@@ -83,7 +85,8 @@ For all running notebooks, a quick browser refresh will be needed to apply the s
 - `pastel-on-dark`
 - `rubyblue`
 - `seti`
-- `solarized`
+- `solarized-light`
+- `solarized-dark`
 - `the-matrix`
 - `tomorrow-night-bright`
 - `tomorrow-night-eighties`
@@ -100,9 +103,17 @@ For all running notebooks, a quick browser refresh will be needed to apply the s
 - `wide`
 - `hovertable`
 
-##### `-t, --typograhy`
+##### `-t, --typography`
 
 - `serif`
+
+##### `-f, --font`
+
+- `Ubuntu_Mono`
+
+##### `-b, --background`
+
+- `dark`
 
 ### License
 
