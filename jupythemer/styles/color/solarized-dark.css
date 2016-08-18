@@ -1,0 +1,167 @@
+/*
+    Adapted for jupyter-themer from https://github.com/codemirror
+*/
+
+/*
+Solarized theme for code-mirror
+http://ethanschoonover.com/solarized
+*/
+
+/*
+Solarized color pallet
+http://ethanschoonover.com/solarized/img/solarized-palette.png
+*/
+
+.solarized.base03 { color: #002b36; }
+.solarized.base02 { color: #073642; }
+.solarized.base01 { color: #586e75; }
+.solarized.base00 { color: #657b83; }
+.solarized.base0 { color: #839496; }
+.solarized.base1 { color: #93a1a1; }
+.solarized.base2 { color: #eee8d5; }
+.solarized.base3  { color: #fdf6e3; }
+.solarized.solar-yellow  { color: #b58900; }
+.solarized.solar-orange  { color: #cb4b16; }
+.solarized.solar-red { color: #dc322f; }
+.solarized.solar-magenta { color: #d33682; }
+.solarized.solar-violet  { color: #6c71c4; }
+.solarized.solar-blue { color: #268bd2; }
+.solarized.solar-cyan { color: #2aa198; }
+.solarized.solar-green { color: #859900; }
+
+/* Color scheme for code-mirror */
+
+.CodeMirror {
+  line-height: 1.45em;
+  color-profile: sRGB;
+  rendering-intent: auto;
+}
+.CodeMirror {
+  color: #839496;
+  background-color:  #002b36;
+  text-shadow: #002b36 0 1px;
+}
+/* .CodeMirror {
+  background-color: #fdf6e3;
+  color: #657b83;
+  text-shadow: #eee8d5 0 1px;
+} */
+
+.CodeMirror .CodeMirror-widget {
+  text-shadow: none;
+}
+
+.CodeMirror span.cm-header { color: #586e75; }
+.CodeMirror span.cm-quote { color: #93a1a1; }
+
+.CodeMirror span.cm-keyword { color: #cb4b16; }
+.CodeMirror span.cm-atom { color: #d33682; }
+.CodeMirror span.cm-number { color: #d33682; }
+.CodeMirror span.cm-def { color: #2aa198; }
+
+.CodeMirror span.cm-variable { color: #839496; }
+.CodeMirror span.cm-variable-2 { color: #b58900; }
+.CodeMirror span.cm-variable-3 { color: #6c71c4; }
+
+.CodeMirror span.cm-property { color: #2aa198; }
+.CodeMirror span.cm-operator { color: #6c71c4; }
+
+.CodeMirror span.cm-comment { color: #586e75; font-style:italic; }
+
+.CodeMirror span.cm-string { color: #859900; }
+.CodeMirror span.cm-string-2 { color: #b58900; }
+
+.CodeMirror span.cm-meta { color: #859900; }
+.CodeMirror span.cm-qualifier { color: #b58900; }
+.CodeMirror span.cm-builtin { color: #d33682; }
+.CodeMirror span.cm-bracket { color: #cb4b16; }
+.CodeMirror .CodeMirror-matchingbracket { color: #859900; }
+.CodeMirror .CodeMirror-nonmatchingbracket { color: #dc322f; }
+.CodeMirror span.cm-tag { color: #93a1a1; }
+.CodeMirror span.cm-attribute { color: #2aa198; }
+.CodeMirror span.cm-hr {
+  color: transparent;
+  border-top: 1px solid #586e75;
+  display: block;
+}
+.CodeMirror span.cm-link { color: #93a1a1; cursor: pointer; }
+.CodeMirror span.cm-special { color: #6c71c4; }
+.CodeMirror span.cm-em {
+  color: #999;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.CodeMirror span.cm-strong { color: #eee; }
+.CodeMirror span.cm-error,
+.CodeMirror span.cm-invalidchar {
+  color: #586e75;
+  border-bottom: 1px dotted #dc322f;
+}
+
+.CodeMirror div.CodeMirror-selected { background: #073642; }
+.CodeMirror.CodeMirror ::selection { background: rgba(7, 54, 66, 0.99); }
+.CodeMirror .CodeMirror-line::-moz-selection, span .CodeMirror-line > span::-moz-selection, span .CodeMirror-line > span > span::-moz-selection { background: rgba(7, 54, 66, 0.99); }
+
+/* .CodeMirror div.CodeMirror-selected { background: #eee8d5; }
+.CodeMirror .CodeMirror-line::selection, span .CodeMirror-line > span::selection, span .CodeMirror-line > span > span::selection { background: #eee8d5; }
+.CodeMirror .CodeMirror-line::-moz-selection, span.cm-s-ligh .CodeMirror-line > span::-moz-selection, span.cm-s-ligh .CodeMirror-line > span > span::-moz-selection { background: #eee8d5; } */
+
+/* Editor styling */
+
+
+
+/* Little shadow on the view-port of the buffer view */
+.CodeMirror {
+  -moz-box-shadow: inset 7px 0 12px -6px #000;
+  -webkit-box-shadow: inset 7px 0 12px -6px #000;
+  box-shadow: inset 7px 0 12px -6px #000;
+}
+
+/* Gutter border and some shadow from it  */
+.CodeMirror .CodeMirror-gutters {
+  border-right: 1px solid;
+}
+
+/* Gutter colors and line number styling based of color scheme (dark / light) */
+
+/* Dark */
+.CodeMirror .CodeMirror-gutters {
+  background-color:  #002b36;
+  border-color: #00232c;
+}
+
+.CodeMirror .CodeMirror-linenumber {
+  text-shadow: #021014 0 -1px;
+}
+
+/* Light */
+/* .CodeMirror .CodeMirror-gutters {
+  background-color: #fdf6e3;
+  border-color: #eee8d5;
+} */
+
+/* Common */
+.CodeMirror .CodeMirror-linenumber {
+  color: #586e75;
+  padding: 0 5px;
+}
+.CodeMirror .CodeMirror-guttermarker-subtle { color: #586e75; }
+.CodeMirror .CodeMirror-guttermarker { color: #ddd; }
+/* .CodeMirror .CodeMirror-guttermarker { color: #cb4b16; } */
+
+.CodeMirror .CodeMirror-gutter .CodeMirror-gutter-text {
+  color: #586e75;
+}
+
+.CodeMirror .CodeMirror-cursor { border-left: 1px solid #819090; }
+
+/*
+Active line. Negative margin compensates left padding of the text in the
+view-port
+*/
+.CodeMirror .CodeMirror-activeline-background {
+  background: rgba(255, 255, 255, 0.10);
+}
+/* .CodeMirror .CodeMirror-activeline-background {
+  background: rgba(0, 0, 0, 0.10);
+} */

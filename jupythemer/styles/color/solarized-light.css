@@ -36,12 +36,12 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   color-profile: sRGB;
   rendering-intent: auto;
 }
-.CodeMirror.cm-s-dark {
+/* .CodeMirror {
   color: #839496;
   background-color:  #002b36;
   text-shadow: #002b36 0 1px;
-}
-.CodeMirror.cm-s-light {
+} */
+.CodeMirror {
   background-color: #fdf6e3;
   color: #657b83;
   text-shadow: #eee8d5 0 1px;
@@ -98,13 +98,13 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   border-bottom: 1px dotted #dc322f;
 }
 
-.CodeMirror.cm-s-dark div.CodeMirror-selected { background: #073642; }
-.CodeMirror.cm-s-dark.CodeMirror ::selection { background: rgba(7, 54, 66, 0.99); }
-.CodeMirror.cm-s-dark .CodeMirror-line::-moz-selection, span.cm-s-dark .CodeMirror-line > span::-moz-selection, span.cm-s-dark .CodeMirror-line > span > span::-moz-selection { background: rgba(7, 54, 66, 0.99); }
+/* .CodeMirror div.CodeMirror-selected { background: #073642; }
+.CodeMirror.CodeMirror ::selection { background: rgba(7, 54, 66, 0.99); }
+.CodeMirror .CodeMirror-line::-moz-selection, span .CodeMirror-line > span::-moz-selection, span .CodeMirror-line > span > span::-moz-selection { background: rgba(7, 54, 66, 0.99); } */
 
-.CodeMirror.cm-s-light div.CodeMirror-selected { background: #eee8d5; }
-.CodeMirror.cm-s-light .CodeMirror-line::selection, span.cm-s-light .CodeMirror-line > span::selection, span.cm-s-light .CodeMirror-line > span > span::selection { background: #eee8d5; }
-.CodeMirror.cm-s-light .CodeMirror-line::-moz-selection, span.cm-s-ligh .CodeMirror-line > span::-moz-selection, span.cm-s-ligh .CodeMirror-line > span > span::-moz-selection { background: #eee8d5; }
+.CodeMirror div.CodeMirror-selected { background: #eee8d5; }
+.CodeMirror .CodeMirror-line::selection, span .CodeMirror-line > span::selection, span .CodeMirror-line > span > span::selection { background: #eee8d5; }
+.CodeMirror .CodeMirror-line::-moz-selection, span.cm-s-ligh .CodeMirror-line > span::-moz-selection, span.cm-s-ligh .CodeMirror-line > span > span::-moz-selection { background: #eee8d5; }
 
 /* Editor styling */
 
@@ -125,17 +125,17 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 /* Gutter colors and line number styling based of color scheme (dark / light) */
 
 /* Dark */
-.CodeMirror.cm-s-dark .CodeMirror-gutters {
+/* .CodeMirror .CodeMirror-gutters {
   background-color:  #002b36;
   border-color: #00232c;
 }
 
-.CodeMirror.cm-s-dark .CodeMirror-linenumber {
+.CodeMirror .CodeMirror-linenumber {
   text-shadow: #021014 0 -1px;
-}
+} */
 
 /* Light */
-.CodeMirror.cm-s-light .CodeMirror-gutters {
+.CodeMirror .CodeMirror-gutters {
   background-color: #fdf6e3;
   border-color: #eee8d5;
 }
@@ -146,8 +146,8 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   padding: 0 5px;
 }
 .CodeMirror .CodeMirror-guttermarker-subtle { color: #586e75; }
-.CodeMirror.cm-s-dark .CodeMirror-guttermarker { color: #ddd; }
-.CodeMirror.cm-s-light .CodeMirror-guttermarker { color: #cb4b16; }
+/* .CodeMirror .CodeMirror-guttermarker { color: #ddd; } */
+.CodeMirror .CodeMirror-guttermarker { color: #cb4b16; }
 
 .CodeMirror .CodeMirror-gutter .CodeMirror-gutter-text {
   color: #586e75;
@@ -159,9 +159,9 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 Active line. Negative margin compensates left padding of the text in the
 view-port
 */
-.CodeMirror.cm-s-dark .CodeMirror-activeline-background {
+/* .CodeMirror .CodeMirror-activeline-background {
   background: rgba(255, 255, 255, 0.10);
-}
-.CodeMirror.cm-s-light .CodeMirror-activeline-background {
+} */
+.CodeMirror .CodeMirror-activeline-background {
   background: rgba(0, 0, 0, 0.10);
 }
