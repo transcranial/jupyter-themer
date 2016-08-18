@@ -6,12 +6,11 @@ import sys
 import argparse
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
-jupyter_dir = os.path.dirname(jupyter.__file__)
-custom_css_filepath = jupyter_dir + '/notebook/static/custom/custom.css'
-
+custom_css_filepath = os.path.join(os.path.expanduser('~'), 'custom', 'custom.css') 
 
 def write_to_css(content):
     try:
+        os.makedirs(os.path.dirname(custom_css_filepath), exist_ok=True)
         with open(custom_css_filepath, 'w') as f:
             f.write(content)
     except:
