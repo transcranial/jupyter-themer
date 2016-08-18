@@ -1,42 +1,38 @@
-/*
-    Adapted for jupyter-themer from https://github.com/codemirror
-*/
 
-/*
 
-    Name:       Base16 Default Dark
-    Author:     Chris Kempson (http://chriskempson.com)
+span.ansiblack {color: #343d46;}
+span.ansiblue {color: #96b5b4;}
+span.ansigray {color: #a7adba;}
+span.ansigreen {color: #a3be8c;}
+span.ansipurple {color: #b48ead;}
+span.ansired {color: #bf616a;}
+span.ansiyellow {color: #ebcb8b;}
 
-    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-chrome-devtools)
-    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+div.output_stderr {background-color: #bf616a;}
+div.output_stderr pre {color: #dfe1e8;}
 
-*/
+.cm-s-ipython.CodeMirror {background: #2b303b; color: #dfe1e8;}
+.cm-s-ipython div.CodeMirror-selected {background: #343d46 !important;}
+.cm-s-ipython .CodeMirror-gutters {background: #2b303b; border-right: 0px;}
+.cm-s-ipython .CodeMirror-linenumber {color: #65737e;}
+.cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #a7adba !important;}
 
-.CodeMirror { background: #151515; color: #e0e0e0; }
-.CodeMirror div.CodeMirror-selected { background: #303030; }
-.CodeMirror .CodeMirror-line::selection, .CodeMirror .CodeMirror-line > span::selection, .CodeMirror .CodeMirror-line > span > span::selection { background: rgba(48, 48, 48, .99); }
-.CodeMirror .CodeMirror-line::-moz-selection, .CodeMirror .CodeMirror-line > span::-moz-selection, .CodeMirror .CodeMirror-line > span > span::-moz-selection { background: rgba(48, 48, 48, .99); }
-.CodeMirror .CodeMirror-gutters { background: #151515; border-right: 0px; }
-.CodeMirror .CodeMirror-guttermarker { color: #ac4142; }
-.CodeMirror .CodeMirror-guttermarker-subtle { color: #505050; }
-.CodeMirror .CodeMirror-linenumber { color: #505050; }
-.CodeMirror .CodeMirror-cursor { border-left: 1px solid #b0b0b0; }
+.cm-s-ipython span.cm-comment {color: #ab7967;}
+.cm-s-ipython span.cm-atom {color: #b48ead;}
+.cm-s-ipython span.cm-number {color: #b48ead;}
 
-.CodeMirror span.cm-comment { color: #8f5536; }
-.CodeMirror span.cm-atom { color: #aa759f; }
-.CodeMirror span.cm-number { color: #aa759f; }
+.cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {color: #a3be8c;}
+.cm-s-ipython span.cm-keyword {color: #bf616a;}
+.cm-s-ipython span.cm-string {color: #ebcb8b;}
+.cm-s-ipython span.cm-operator {color: #ab7967;}
+.cm-s-ipython span.cm-builtin {color: #b48ead;}
 
-.CodeMirror span.cm-property, .CodeMirror span.cm-attribute { color: #90a959; }
-.CodeMirror span.cm-keyword { color: #ac4142; }
-.CodeMirror span.cm-string { color: #f4bf75; }
+.cm-s-ipython span.cm-variable {color: #a3be8c;}
+.cm-s-ipython span.cm-variable-2 {color: #8fa1b3;}
+.cm-s-ipython span.cm-def {color: #d08770;}
+.cm-s-ipython span.cm-error {background: #bf616a; color: #a7adba;}
+.cm-s-ipython span.cm-bracket {color: #c0c5ce;}
+.cm-s-ipython span.cm-tag {color: #bf616a;}
+.cm-s-ipython span.cm-link {color: #b48ead;}
 
-.CodeMirror span.cm-variable { color: #90a959; }
-.CodeMirror span.cm-variable-2 { color: #6a9fb5; }
-.CodeMirror span.cm-def { color: #d28445; }
-.CodeMirror span.cm-bracket { color: #e0e0e0; }
-.CodeMirror span.cm-tag { color: #ac4142; }
-.CodeMirror span.cm-link { color: #aa759f; }
-.CodeMirror span.cm-error { background: #ac4142; color: #b0b0b0; }
-
-.CodeMirror .CodeMirror-activeline-background { background: #202020; }
-.CodeMirror .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }
+.cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color: #dfe1e8 !important;}
