@@ -98,6 +98,7 @@ For all running notebooks, a quick browser refresh will be needed to apply the s
 ##### `-l, --layout`
 
 - `wide`
+- `hovertable`
 
 ##### `-t, --typograhy`
 
