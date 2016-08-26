@@ -1,0 +1,357 @@
+/*
+  Dark theme for Jupyter Notebook/iPython 4
+  Author: Theodore Pak
+  Repo at: https://github.com/powerpak/jupyter-dark-theme
+
+  Inspired by and adapted from the following:
+  Base16 for iPython Notebook (https://github.com/nsonnad/base16-ipython-notebook)
+  Base16 Twilight Dark, David Hart (http://hart-dev.com)
+  CodeMirror template adapted for IPython Notebook by Nikhil Sonnad (https://github.com/nsonnad/base16-ipython-notebook)
+  CodeMirror template by Jan T. Scott (https://github.com/idleberg/base16-chrome-devtools)
+  Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+*/
+
+/*
+  SET THE CODE/MONOSPACE FONT
+
+  I prefer Bitsream Vera Sans Mono, which is freely downloadable here:
+  http://www.dafont.com/bitstream-vera-mono.font
+  However, there are plenty of alternatives at http://programmingfonts.org/
+  in which case, add your preferred font to the stack below.
+*/
+
+.CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
+    font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
+    font-size: 9pt;
+}
+.terminal-app .terminal { line-height: 1.3em; }
+div.output pre, div.output code, .rendered_html pre, .rendered_html code, div.completions select, div.container pre {
+  font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
+}
+div.output pre, div.output code, .rendered_html pre, .rendered_html p code, div.completions select, div.container pre {
+    font-size: 9pt;
+}
+
+div.prompt, div.tooltiptext pre {
+    font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
+    font-size: 8pt;
+}
+
+div.input_area {
+    border-color: rgba(0, 0, 0, 0.10);
+    background: rbga(0, 0, 0, 0.5);
+}
+
+/* GLOBALS */
+
+@media not print { body { background-color: #eee; } }
+a { color: #CF4A4C; }
+a:hover, a:focus { color: #DE6F71; }
+
+/* INTRO PAGE */
+
+body[data-notebook-path] { background-color: #222; }
+body[data-notebook-path] #header, .terminal-app #header { display: none !important; }
+
+.tabbable { color: #979797; }
+.nav-tabs { border-bottom-color: #444; }
+.nav-tabs > li > a:hover, .nav > li > a:focus {
+  background-color: #333;
+  border-color: #222 #222 #555 #222;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  color: #979797;
+  background-color: #444;
+  border-top-color: #444;
+  border-right-color: #444;
+  border-left-color: #444;
+}
+.list_container { border-color: #444; }
+.list_container > div { border-bottom-color: #444; }
+.list_item:hover { background-color: #333; }
+.list_header { background-color: #444; }
+#notebook_list input[type="checkbox"] { opacity: 0.3; }
+#notebook_list input[type="checkbox"]:checked { opacity: 1; }
+.item_icon { color: #777; }
+.panel { border-color: #444; background-color: #222; }
+.panel-default > .panel-heading { border-color: #444; }
+#site .panel-group .panel .panel-heading { background-color: #444; }
+#running .panel-group .panel .panel-body .list_container .list_item { border-bottom-color: #444; }
+
+/* Dropdown menus */
+
+.dropdown-menu {
+  background: rgba(50, 50, 50, 0.95);
+  color: #b7b7b7;
+}
+.dropdown-menu > li > a, .dropdown-submenu > a:after, .dropdown-menu > li > a:visited:after {
+  color: #b7b7b7;
+}
+.dropdown-menu .divider {
+  background-color: #444;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: #444;
+}
+.dropdown-menu > li > a:hover:after, .dropdown-menu > li > a:focus:after,
+.dropdown-menu > li > a:active:after {
+  color: #fff;
+}
+
+/* TERMINAL INTERFACE */
+.terminal-app #site { background: #272727; }
+.terminal-app .terminal { background: #141414 !important; }
+
+/* NOTEBOOK AND EDITOR INTERFACE */
+
+/* comment out the following line to unhide the toolbar */
+/*div#maintoolbar { display: none !important; }*/
+
+/*
+  Header UI styles
+*/
+
+body.notebook_app > #header { display: block !important; }
+.notebook_app > #header, .edit_app > #header {
+  background-color: #333;
+  color: #b7b7b7;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.edit_app #menubar .navbar { margin-bottom: 0; }
+body > #header .header-bar { background: #444; }
+#header .navbar-brand { display: none; }
+#header .filename { margin-left: 0; margin-right: 2em; }
+#header .current_kernel_logo { width: 24px; height: 24px; }
+span.save_widget span.filename:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.navbar-default {
+  background: transparent;
+  color: #b7b7b7;
+  border-color: #444;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #444;
+}
+
+@media not print {
+  .notebook_app #notebook {
+    background: #111;
+  }
+
+  .notebook_app #notebook-container, .edit_app #texteditor-backdrop {
+    background: #272727;
+  }
+}
+
+/*
+  Inverting the notebook editor UI
+*/
+
+.celltoolbar {
+  border-color: #444;
+  background: #444;
+  color: #b7b7b7;
+}
+.ctb_global_show .ctb_show ~ div.text_cell_render {
+  border-color: #444;
+}
+.celltoolbar select {
+  opacity: 0.5;
+}
+
+.modal-dialog .modal-content, .popover, .popover .popover-title {
+  background: rgba(50, 50, 50, 0.95);
+  color: #b7b7b7;
+}
+.modal-header, .popover-title {
+  border-bottom-color: #444;
+}
+.modal-footer {
+  border-top-color: #444;
+}
+.modal-dialog .close {
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+.modal-dialog .alert-info {
+  background-color: #373E42;
+  color: #d9edf7;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: #444;
+}
+
+.btn:focus, .btn:active:focus {
+  outline: 5px auto rgba(102, 175, 233, 0.3);
+  outline-offset: -1px;
+}
+.btn-default {
+  background-color: #555;
+  border-color: #222;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  color: #aaa;
+}
+.btn-default:focus, .btn-default:hover {
+  background-color: #555;
+  border-color: #222;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  color: #bbb;
+}
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+  background-color: #474747;
+  color: #999;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.btn-default.disabled:focus, .btn-default.disabled:hover,
+.btn-default[disabled]:focus, .btn-default[disabled]:hover {
+  background-color: #555;
+  border-color: #222;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  color: #aaa;
+}
+.btn-default:active:hover, .btn-default:active:focus,
+.open > .dropdown-toggle.btn-default:hover, .open > .dropdown-toggle.btn-default:focus {
+  background-color: #474747;
+  color: #999;
+  border-color: #222;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  color: #eee;
+  background-color: #4481b7;
+  border-color: #222;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.btn-primary:focus, .btn-primary:hover {
+  background-color: #4481b7;
+  color: #fff;
+}
+.btn-primary:active {
+  background-color: #306ea6;
+  color: #ccc;
+}
+.btn-primary:active:hover, .btn-primary:active:focus {
+  background-color: #306ea6;
+  color: #ccc;
+}
+
+.form-control {
+  background: #222;
+  color: #eee;
+  border-color: #777;
+}
+.form-control:focus {
+  border-color: #458ac1;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.3);
+}
+.form-control::selection {
+  background: rgba(221, 240, 255, 0.19);
+}
+
+#complete {
+  border-color: #444;
+  background: rgba(50, 50, 50, 0.95);
+  color: #b7b7b7;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.completions select {
+  background: rgba(50, 50, 50, 0.95);
+  color: #b7b7b7;
+}
+
+/*
+  Set fonts and styles for outputted content
+*/
+
+div#notebook .text_cell_render {
+  font-size: 16.25px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.rendered_html li p {
+  margin-top: 1em;
+}
+
+.rendered_html h1 {
+    color: #CF4A4C;
+}
+
+div.output_html { font-family: sans-serif; }
+
+/*
+  Set colors and styles that we only want on the screen, not for print
+*/
+
+@media not print {
+  .notebook_app div.cell.running .input .input_area {
+    border-left-color: #82591E;
+    -webkit-animation-name: pulseBorder;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  @-webkit-keyframes pulseBorder {
+    from { border-left-color: #82591E; }
+    to { border-left-color: #eea236; }
+  }
+
+  .notebook_app div.input_prompt {color: #9b703f;}
+  .notebook_app div.output_prompt {color: #9b859d;}
+  .notebook_app div.input_area {
+    border-radius: 0px;
+    border: 1px solid #464b50;
+  }
+  .notebook_app div.output_area pre { font-weight: normal; color: #979797; }
+  .notebook_app div.output_subarea { font-weight: normal; color: #979797; }
+  .notebook_app div.output_stderr {background-color: #cf6a4c;}
+  .notebook_app div.output_stderr pre {color: #eee;}
+
+  .notebook_app .rendered_html table, .notebook_app .rendered_html th, .notebook_app .rendered_html tr, .notebook_app .rendered_html td {
+    border: 1px  #979797 solid;
+    color: #979797;
+  }
+  .notebook_app div.text_cell_render, .notebook_app div.output_html { color: #979797; }
+  .notebook_app table.dataframe tr { border: 1px #979797; }
+
+  .notebook_app .rendered_html pre, .notebook_app .rendered_html code {
+    border: 0;
+    background-color: #444;
+    color: #b0b0b0;
+    padding: 0;
+  }
+}
+
+/*
+  Terminal text coloring
+*/
+
+span.ansiblack {color: #323537;}
+span.ansiblue {color: #afc4db;}
+span.ansigray {color: #838184;}
+span.ansigreen {color: #8f9d6a;}
+span.ansipurple {color: #9b859d;}
+span.ansired {color: #cf6a4c;}
+span.ansiyellow {color: #f9ee98;}
+
+
+/*
+  Markdown editing
+*/
+
+.cm-s-default span.cm-header {color: #CF4A4C;}
+.cm-s-default span.cm-variable-2 {color: #7587A6;}
+.cm-s-default span.cm-comment {color: #7F7A80;}
