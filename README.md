@@ -43,12 +43,15 @@ usage: jupyter-themer [-c COLOR, --color COLOR]
                       [-l LAYOUT, --layout LAYOUT]
                       [-t TYPOGRAPHY, --typography TYPOGRAPHY]
                       [-f CODE_FONT, --font CODE_FONT]
-                      [-b BACKGROUND, --background BACKGROUnD]
+                      [-b BACKGROUND, --background BACKGROUND]
+                      [-s OPTION, --show OPTION]
 ```
 
 If no arguments are supplied, the program will revert the jupyter notebook style back to default.
 
 Any combination of the style types can be specified, and the program will mix together the associated color/layout/typographic/code font/background css files accordingly, writing it to the `custom.css` file used by the notebook.
+
+To get a list of available options use the `show` argument, e.g. `jupyter-themer --show color`
 
 For all running notebooks, a quick browser refresh will be needed to apply the stylesheet.
 

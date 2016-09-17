@@ -1,9 +1,11 @@
 from __future__ import print_function
 
+import argparse
+import glob
 import notebook
 import os
 import sys
-import argparse
+
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 notebook_dir = os.path.dirname(notebook.__file__)
@@ -29,15 +31,26 @@ def run(args=None):
         parser.add_argument('-f', '--font', required=False, dest='font', default=None, help='code font family')
         parser.add_argument('-b', '--background', required=False, dest='background',
                             default=None, help='background theme styling')
+        parser.add_argument('-s', '--show', required=False, dest='show',
+                            default=None, help='show available choices')
         args = parser.parse_args()
 
     if (args.color is None
             and args.layout is None
             and args.typography is None
             and args.font is None
-            and args.background is None):
+            and args.background is None
+            and args.show is None):
         print('Jupyter notebook reverted to default style.')
         write_to_css('')
+        sys.exit()
+
+    if args.show in ['color', 'layout', 'typography', 'font', 'background']:
+        if args.show == 'font':
+            args.show = 'code_font'
+        options = glob.glob('{}/styles/{}/*.css'.format(current_dir, args.show))
+        for option in options:
+            print(os.path.basename(option).split('.')[0])
         sys.exit()
 
     content_all = ''
