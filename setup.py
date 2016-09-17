@@ -4,7 +4,7 @@ long_description = 'Apply custom CSS styling to your jupyter notebooks.\n\nMix a
 
 setup(
     name='jupyter-themer',
-    version='0.2.0',
+    version='0.3.0',
     license='MIT',
     description='Custom CSS themer for jupyter notebooks',
     long_description=long_description,

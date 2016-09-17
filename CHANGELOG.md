@@ -1,6 +1,14 @@
+### 0.3.0
+
+(September 17, 2016)
+
+- Added argument to list available options for each type [#15](https://github.com/transcranial/jupyter-themer/pull/15) (@wtgee)
+
+  example: `jupyter-themer --show color`
+
 ### 0.2.0
 
-(August 18th, 2016)
+(August 18, 2016)
 
 - solarized into solarized-light/solarized-dark [#10](https://github.com/transcranial/jupyter-themer/pull/10) (@shian48263)
 
