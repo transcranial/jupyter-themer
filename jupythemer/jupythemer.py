@@ -49,7 +49,7 @@ def run(args=None):
         if args.show == 'font':
             args.show = 'code_font'
         options = glob.glob('{}/styles/{}/*.css'.format(current_dir, args.show))
-        for option in options:
+        for option in sorted(options):
             print(os.path.basename(option).split('.')[0])
         sys.exit()
 
