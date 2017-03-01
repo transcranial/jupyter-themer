@@ -12,9 +12,9 @@ notebook_dir = os.path.dirname(notebook.__file__)
 custom_css_filepath = notebook_dir + '/static/custom/custom.css'
 
 
-def write_to_css(content):
+def write_to_css(content, css_path):
     try:
-        with open(custom_css_filepath, 'w') as f:
+        with open(css_path, 'w+') as f:
             f.write(content)
     except:
         print('Error writing to custom.css')
@@ -33,6 +33,8 @@ def run(args=None):
                             default=None, help='background theme styling')
         parser.add_argument('-s', '--show', required=False, dest='show',
                             default=None, help='show available choices')
+        parser.add_argument('-p', '--path', required=False, dest='css_path',
+                            default=custom_css_filepath, help='custom css path.(default:%s)' % custom_css_filepath)
         args = parser.parse_args()
 
     if (args.color is None
@@ -42,7 +44,7 @@ def run(args=None):
             and args.background is None
             and args.show is None):
         print('Jupyter notebook reverted to default style.')
-        write_to_css('')
+        write_to_css('', args.css_path)
         sys.exit()
 
     if args.show in ['color', 'layout', 'typography', 'font', 'background']:
@@ -109,7 +111,7 @@ def run(args=None):
             print('Bad argument passed to --background')
             sys.exit(1)
 
-    write_to_css(content_all)
+    write_to_css(content_all, args.css_path)
     print('Custom jupyter notebook theme created - refresh any open jupyter notebooks to apply theme.')
 
 
