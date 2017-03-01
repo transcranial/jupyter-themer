@@ -33,7 +33,7 @@ def run(args=None):
                             default=None, help='background theme styling')
         parser.add_argument('-s', '--show', required=False, dest='show',
                             default=None, help='show available choices')
-        parser.add_argument('-p', '--path', required=False, dest='css_path',
+        parser.add_argument('-p', '--css_path', required=False, dest='css_path',
                             default=custom_css_filepath, help='custom css path.(default:%s)' % custom_css_filepath)
         args = parser.parse_args()
 
