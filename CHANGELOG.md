@@ -1,3 +1,14 @@
+### 0.4.0
+
+(July 5, 2017)
+
+- Allow specifying fonts without typography [#16](https://github.com/transcranial/jupyter-themer/pull/16) (@musically-ut)
+- Add Source Code Pro as a font option [#17](https://github.com/transcranial/jupyter-themer/pull/17) (@musically-ut)
+- Add Inconsolata font [#18](https://github.com/transcranial/jupyter-themer/pull/18) (@musically-ut)
+- Add option for custom path to custom.css [#23](https://github.com/transcranial/jupyter-themer/pull/23) (@raino01r)
+- Create MANIFEST.in [#25](https://github.com/transcranial/jupyter-themer/pull/25) (@pmlandwehr)
+
+  example: `jupyter-themer --show color`
 ### 0.3.0
 
 (September 17, 2016)
