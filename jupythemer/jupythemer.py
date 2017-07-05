@@ -55,13 +55,15 @@ def run(args=None):
 
     content_all = ''
 
-    if args.typography is not None and args.font is not None:
+    if args.typography is not None:
         try:
             with open('{}/styles/typography/{}.import'.format(current_dir, args.typography), 'r') as f_color:
                 content_all += f_color.read() + '\n'
         except:
             print('Bad argument passed to --typography')
             sys.exit(1)
+
+    if args.font is not None:
         try:
             with open('{}/styles/code_font/{}.import'.format(current_dir, args.font), 'r') as f_font:
                 content_all += f_font.read() + '\n'
