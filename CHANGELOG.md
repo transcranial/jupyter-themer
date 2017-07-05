@@ -8,7 +8,6 @@
 - Add option for custom path to custom.css [#23](https://github.com/transcranial/jupyter-themer/pull/23) (@raino01r)
 - Create MANIFEST.in [#25](https://github.com/transcranial/jupyter-themer/pull/25) (@pmlandwehr)
 
-  example: `jupyter-themer --show color`
 ### 0.3.0
 
 (September 17, 2016)

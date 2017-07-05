@@ -4,5 +4,9 @@ python:
   - "3.5"
   - "3.6"
 install:
-  - pip install -U setuptools six jupyter notebook
+  - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
+      pip install -U six jupyter notebook ipython<6.0;
+    else
+      pip install -U jupyter notebook ipython>=6.0;
+    fi
 script: nosetests
