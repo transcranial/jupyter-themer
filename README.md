@@ -45,11 +45,12 @@ usage: jupyter-themer [-c COLOR, --color COLOR]
                       [-f CODE_FONT, --font CODE_FONT]
                       [-b BACKGROUND, --background BACKGROUND]
                       [-s OPTION, --show OPTION]
+                      [-p PATH, --css_path PATH]
 ```
 
 If no arguments are supplied, the program will revert the jupyter notebook style back to default.
 
-Any combination of the style types can be specified, and the program will mix together the associated color/layout/typographic/code font/background css files accordingly, writing it to the `custom.css` file used by the notebook.
+Any combination of the style types can be specified, and the program will mix together the associated color/layout/typographic/code font/background css files accordingly, writing it to the `custom.css` file used by the notebook. Use `-p` or `--css_path` to specify a custom path for the css file, for example if you need per-user configuration.
 
 To get a list of available options use the `show` argument, e.g. `jupyter-themer --show color`
 
